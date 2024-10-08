@@ -8,4 +8,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="bogsydataset.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>bogsydataset.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="bogsydataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bogsydataset.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>
